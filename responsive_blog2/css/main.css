@@ -1,0 +1,211 @@
+/* Inserta tu codigo aqui */
+*{
+	font-family: 'Open sans', sans-serif;
+}
+body {
+	background-color: #2D2735;
+
+}
+/*creando menu*/
+header {
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	position: relative;
+	z-index: 100;
+	position: fixed;
+}
+header img{
+	width: 50%;
+	height: 120px;
+	margin-left: 20%;
+	padding: 1%
+}
+nav {
+	padding-top: 2.5%;
+}
+nav a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.3em;
+	padding: 2%;
+}
+input {
+	display: none;
+}
+i {
+	display: none;
+}
+/*Responsive*/
+@media screen and (min-width: 320px) and (max-width:480px){
+	header img{
+		width: 100%;
+		height: 120px;
+		margin-left: 20%;
+		padding: 1%
+	}
+	i.fa{
+		display: inline-table;
+		padding: 40px 0px 0px 130px;
+		color: white;
+		font-size: 50px;
+		cursor: pointer;
+	}
+	nav .menu{
+		position: absolute;
+		top: 95px;
+		left: 0;
+		width: 100%;
+		height: 250px;
+		background: rgba(51,51,51,0.9);
+		transition: all 0.5s;
+		transform: translateX(-100%);
+	}
+	nav a {
+		display: block;
+		color: #fff;
+		width: 100%;
+		height: 50px;
+		text-decoration: none;
+		padding: 5px;
+		border-bottom: 1px solid rgba(255,255,255,0.5);
+	}
+	.menu a:hover{
+	background: rgba(255,255,255,0.3);
+}
+	.menu-bar:checked ~ nav .menu {
+		transform: translateX(0%);
+	}
+}
+
+/*creando seccion principal*/
+section.principal {
+	width: 100%;
+	height: 100%;
+	padding-bottom: 2%;
+	background-color: #2D2735;
+/*	background-image: url('../image/header-image.jpg');*/
+	position: relative;
+}
+section.principal img{
+	width: 100%;
+	height: 400px;
+}
+.subtitulo{
+	width: 70%;
+	height: 230px;
+	background-color: black;
+	color: white;
+	position: absolute;
+	top: 30%;
+	left: 14%;
+	text-transform: traslateX(-50%) traslateY(-50%);
+	text-align: center;
+	padding-top: 5%
+}
+.subtitulo span{
+	font-family: 'Courgette';
+	font-size: 6em;
+	color: #F6B96A;
+}
+/*creando seccion con tres columnas*/
+.trescolumnas {
+	width: 100%;
+	height: 320px;
+	text-align: center;
+}
+.trescolumnas figcaption {
+	background-color: black;
+	color: white;
+	font-size: 1em;
+	height: 80px;
+    padding: 15px 2px;
+}
+figcaption span {
+	font-family: 'Courgette';
+	color: #F6B96A;
+	font-size: 1.3em;
+}
+figcaption p {
+	font-size: 0.8em;
+}
+.trescolumnas img{
+	width: 100%;
+	height: 200px;
+}
+/*creando seccion con dos columnas*/
+.doscolunmas {
+	width: 100%;
+	height: 1300px;
+	text-align: center;
+}
+.doscolunmas figcaption {
+	background-color: black;
+	color: white;
+	height: 160px;
+    padding: 15px 2px;
+}
+.torm {
+	width: 100%;
+    height: 500px;
+}
+.caja {
+	width: 100%;
+	height: 80px;
+	background-color: black;
+	color: white;
+	text-align: left;
+	padding-top:4%;
+	padding-left: 10%;
+}
+.cajaChica {
+	width: 90%;
+	height: 45px;
+	padding: 2%;
+	background-color: #2D2735;
+}
+.cajaChica input{
+	width: 100%;
+	border: none;
+	background-color: transparent;
+}
+.aba {
+	font-family: 'Courgette';
+	color: #F6B96A;
+	font-size: 1.3em;
+}
+figcaption.chica{
+	height: 700px;
+	margin-top:8%;
+	margin-bottom: 10%;
+}
+figcaption.chica a{
+	text-decoration: none;
+	color: white;
+	background-color: #2D2735;
+	border-radius: 50%;
+	padding: 3%;
+}
+.tormento {
+	margin-top: 4%;
+}
+/*creacon del footer*/
+footer {
+	width: 100%;
+	height:60px;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+footer p{
+		padding-top: 2%;
+}
+/* Responsive */
+
+@media screen and (max-width : 920px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
